@@ -2,7 +2,7 @@ const express = require('express')
 var cors = require('cors')
 const api_helper = require('./helper')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 const apikey  = '20f7cbb365314ec3a4104d0f1f9410ad';
 
 app.use(cors());
